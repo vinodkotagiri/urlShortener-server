@@ -1,6 +1,6 @@
 const express = require('express')
 const { customAlphabet } = require('nanoid')
-const Url = require('../models/Url.js')
+const Url = require('../models/url')
 const { isValidUrl } = require('../helpers/isValidUrl')
 const nanoid = customAlphabet('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdeffghijklmnopqrstuvwxyz01234567890', 8)
 exports.shortenUrl = async (req, res) => {
