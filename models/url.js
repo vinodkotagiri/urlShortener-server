@@ -21,6 +21,10 @@ const urlSchema = new mongoose.Schema(
 			required: true,
 			default: 0,
 		},
+		addedDate: {
+			type: Date,
+			default: new Date(),
+		},
 	},
 	{ timestamps: true }
 )
